@@ -1,0 +1,1014 @@
+[
+  {
+    "ContainingType": "API.Controllers.ContainerController",
+    "Method": "LayLichSuDiChuyen",
+    "RelativePath": "api/Container/{containerId}/lich-su-di-chuyen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "containerId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "trangIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trangSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ContainerController",
+    "Method": "LayTheoId",
+    "RelativePath": "api/Container/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ContainerController",
+    "Method": "ChuyenViTri",
+    "RelativePath": "api/Container/chuyen-vi-tri",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.ChuyenViTriRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ContainerController",
+    "Method": "LayDanhSachLoaiContainer",
+    "RelativePath": "api/Container/loai-container",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ContainerController",
+    "Method": "LayDanhSachLoaiHang",
+    "RelativePath": "api/Container/loai-hang-hoa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ContainerController",
+    "Method": "NhapBai",
+    "RelativePath": "api/Container/nhap-bai",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.NhapBaiRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ContainerController",
+    "Method": "LayContainerQuaHan",
+    "RelativePath": "api/Container/qua-han",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ContainerController",
+    "Method": "TimKiem",
+    "RelativePath": "api/Container/tim-kiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trangIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trangSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "soContainer",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "trangThai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "maKho",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ContainerController",
+    "Method": "XuatBai",
+    "RelativePath": "api/Container/xuat-bai",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.XuatBaiRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "LayHoaDonTheoId",
+    "RelativePath": "api/HoaDon/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "XoaHoaDon",
+    "RelativePath": "api/HoaDon/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "LayThanhToanTheoHoaDon",
+    "RelativePath": "api/HoaDon/{invoiceId}/thanh-toan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "invoiceId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "GhiNhanThanhToan",
+    "RelativePath": "api/HoaDon/ghi-nhan-thanh-toan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.GhiNhanThanhToanRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "LayHopDongTheoId",
+    "RelativePath": "api/HoaDon/hop-dong/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "XoaHopDong",
+    "RelativePath": "api/HoaDon/hop-dong/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "TaoHopDong",
+    "RelativePath": "api/HoaDon/hop-dong/tao-moi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.TaoHopDongRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "TimKiemHopDong",
+    "RelativePath": "api/HoaDon/hop-dong/tim-kiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ti",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ts",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "maKhachHang",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "TaoHoaDon",
+    "RelativePath": "api/HoaDon/tao-moi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.TaoHoaDonRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "TimKiemHoaDon",
+    "RelativePath": "api/HoaDon/tim-kiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ti",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ts",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "maKhachHang",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "trangThai",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.HoaDonController",
+    "Method": "TinhPhiLuuBai",
+    "RelativePath": "api/HoaDon/tinh-phi-luu-bai",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "maContainerDb",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "maHopDongDb",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhachHangController",
+    "Method": "LayTheoId",
+    "RelativePath": "api/KhachHang/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhachHangController",
+    "Method": "XoaMem",
+    "RelativePath": "api/KhachHang/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhachHangController",
+    "Method": "CapNhat",
+    "RelativePath": "api/KhachHang/cap-nhat",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.CapNhatKhachHangRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhachHangController",
+    "Method": "ThemMoi",
+    "RelativePath": "api/KhachHang/them-moi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.ThemKhachHangRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhachHangController",
+    "Method": "TimKiem",
+    "RelativePath": "api/KhachHang/tim-kiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trangIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trangSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ten",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhoBaiController",
+    "Method": "LayKhoTheoId",
+    "RelativePath": "api/KhoBai/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhoBaiController",
+    "Method": "LayKhuVucTheoKho",
+    "RelativePath": "api/KhoBai/{warehouseId}/khu-vuc",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "warehouseId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhoBaiController",
+    "Method": "LayViTriTrong",
+    "RelativePath": "api/KhoBai/{warehouseId}/vi-tri-trong",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "warehouseId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhoBaiController",
+    "Method": "CapNhatKho",
+    "RelativePath": "api/KhoBai/cap-nhat-kho/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "form",
+        "Type": "Model.ThemKhoBaiRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhoBaiController",
+    "Method": "LayViTriTheoKhuVuc",
+    "RelativePath": "api/KhoBai/khu-vuc/{zoneId}/vi-tri",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "zoneId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhoBaiController",
+    "Method": "ThemKho",
+    "RelativePath": "api/KhoBai/them-kho",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.ThemKhoBaiRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhoBaiController",
+    "Method": "ThemKhuVuc",
+    "RelativePath": "api/KhoBai/them-khu-vuc",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.ThemKhuVucRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhoBaiController",
+    "Method": "ThemViTri",
+    "RelativePath": "api/KhoBai/them-vi-tri",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.ThemViTriRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhoBaiController",
+    "Method": "TimKiemKho",
+    "RelativePath": "api/KhoBai/tim-kiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trangIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trangSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ten",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.KhoBaiController",
+    "Method": "XoaKho",
+    "RelativePath": "api/KhoBai/xoa-kho/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.NguoiDungController",
+    "Method": "LayTheoId",
+    "RelativePath": "api/NguoiDung/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.NguoiDungController",
+    "Method": "XoaMem",
+    "RelativePath": "api/NguoiDung/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.NguoiDungController",
+    "Method": "CapNhat",
+    "RelativePath": "api/NguoiDung/cap-nhat",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.CapNhatNguoiDungRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.NguoiDungController",
+    "Method": "TimKiem",
+    "RelativePath": "api/NguoiDung/tim-kiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trangIndex",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "trangSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "hoTen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "taiKhoan",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ThongKeController",
+    "Method": "LayDashboard",
+    "RelativePath": "api/ThongKe/dashboard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ThongKeController",
+    "Method": "LayLichSuIoT",
+    "RelativePath": "api/ThongKe/iot/{containerId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "containerId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "gioiHan",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ThongKeController",
+    "Method": "GhiNhanIoT",
+    "RelativePath": "api/ThongKe/iot/ghi-nhan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.GhiNhanIoTRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "ThemChang",
+    "RelativePath": "api/VanChuyen/chang/them-moi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.ThemChangRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "LayChuyenHangTheoId",
+    "RelativePath": "api/VanChuyen/chuyen-hang/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "XoaChuyenHang",
+    "RelativePath": "api/VanChuyen/chuyen-hang/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "CapNhatTrangThaiChuyenHang",
+    "RelativePath": "api/VanChuyen/chuyen-hang/{id}/trang-thai",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "trangThai",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "LayChangTheoChuyenHang",
+    "RelativePath": "api/VanChuyen/chuyen-hang/{shipmentId}/cac-chang",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shipmentId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "TaoChuyenHang",
+    "RelativePath": "api/VanChuyen/chuyen-hang/tao-moi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.TaoChuyenHangRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "TimKiemChuyenHang",
+    "RelativePath": "api/VanChuyen/chuyen-hang/tim-kiem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ti",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ts",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "maVanDon",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "trangThai",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "LayDanhSachPhuongTien",
+    "RelativePath": "api/VanChuyen/phuong-tien",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ti",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ts",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "bienSo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "CapNhatPhuongTien",
+    "RelativePath": "api/VanChuyen/phuong-tien/cap-nhat",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.PhuongTienModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "ThemPhuongTien",
+    "RelativePath": "api/VanChuyen/phuong-tien/them-moi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.PhuongTienModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "LayDanhSachTauBien",
+    "RelativePath": "api/VanChuyen/tau-bien",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ti",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ts",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.VanChuyenController",
+    "Method": "ThemTauBien",
+    "RelativePath": "api/VanChuyen/tau-bien/them-moi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.TauBienModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.XacThucController",
+    "Method": "DangKy",
+    "RelativePath": "api/XacThuc/dang-ky",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.TaoTaiKhoanRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.XacThucController",
+    "Method": "DangNhap",
+    "RelativePath": "api/XacThuc/dang-nhap",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "form",
+        "Type": "Model.DangNhapRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

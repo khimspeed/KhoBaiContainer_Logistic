@@ -1,0 +1,170 @@
+2026-10-04 19:56:32.065 +07:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2026-10-04 19:56:32.148 +07:00 [DBG] Hosting starting
+2026-10-04 19:56:32.175 +07:00 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-10-04 19:56:32.182 +07:00 [DBG] Reading data from file 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys\key-c014bcf6-2c84-432e-a556-27d5040f21e4.xml'.
+2026-10-04 19:56:32.213 +07:00 [DBG] Found key {c014bcf6-2c84-432e-a556-27d5040f21e4}.
+2026-10-04 19:56:32.228 +07:00 [DBG] Considering key {c014bcf6-2c84-432e-a556-27d5040f21e4} with expiration date 2026-12-17 14:23:50Z as default key.
+2026-10-04 19:56:32.231 +07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-10-04 19:56:32.233 +07:00 [DBG] Decrypting secret element using Windows DPAPI.
+2026-10-04 19:56:32.234 +07:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2026-10-04 19:56:32.241 +07:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2026-10-04 19:56:32.242 +07:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2026-10-04 19:56:32.243 +07:00 [DBG] Using key {c014bcf6-2c84-432e-a556-27d5040f21e4} as the default key.
+2026-10-04 19:56:32.244 +07:00 [DBG] Key ring with default key {c014bcf6-2c84-432e-a556-27d5040f21e4} was loaded during application startup.
+2026-10-04 19:56:32.321 +07:00 [INF] Now listening on: http://localhost:5286
+2026-10-04 19:56:32.321 +07:00 [DBG] Loaded hosting startup assembly API
+2026-10-04 19:56:32.322 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-10-04 19:56:32.322 +07:00 [INF] Hosting environment: Development
+2026-10-04 19:56:32.322 +07:00 [INF] Content root path: C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\API
+2026-10-04 19:56:32.322 +07:00 [DBG] Hosting started
+2026-10-04 19:57:03.019 +07:00 [DBG] Connection id "0HNP22RU7E690" accepted.
+2026-10-04 19:57:03.019 +07:00 [DBG] Connection id "0HNP22RU7E690" started.
+2026-10-04 19:57:03.045 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - null null
+2026-10-04 19:57:03.048 +07:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2026-10-04 19:57:03.181 +07:00 [DBG] Connection id "0HNP22RU7E690" completed keep alive response.
+2026-10-04 19:57:03.183 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.5402ms
+2026-10-04 19:57:03.220 +07:00 [DBG] Connection id "0HNP22RU7E690" received FIN.
+2026-10-04 19:57:03.220 +07:00 [DBG] Connection id "0HNP22RU7E690" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-10-04 19:57:03.221 +07:00 [DBG] Connection id "0HNP22RU7E690" disconnecting.
+2026-10-04 19:57:03.222 +07:00 [DBG] Connection id "0HNP22RU7E690" stopped.
+2026-10-04 20:07:07.540 +07:00 [DBG] Connection id "0HNP22RU7E691" accepted.
+2026-10-04 20:07:07.541 +07:00 [DBG] Connection id "0HNP22RU7E691" started.
+2026-10-04 20:07:07.548 +07:00 [DBG] Connection id "0HNP22RU7E692" accepted.
+2026-10-04 20:07:07.549 +07:00 [DBG] Connection id "0HNP22RU7E692" started.
+2026-10-04 20:07:07.551 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger - null null
+2026-10-04 20:07:07.555 +07:00 [DBG] Connection id "0HNP22RU7E691" completed keep alive response.
+2026-10-04 20:07:07.556 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger - 301 0 null 4.8989ms
+2026-10-04 20:07:07.570 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/index.html - null null
+2026-10-04 20:07:07.720 +07:00 [DBG] Connection id "0HNP22RU7E691" completed keep alive response.
+2026-10-04 20:07:07.720 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/index.html - 200 null text/html;charset=utf-8 150.0521ms
+2026-10-04 20:07:07.841 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui.css - null null
+2026-10-04 20:07:07.842 +07:00 [DBG] Connection id "0HNP22RU7E693" accepted.
+2026-10-04 20:07:07.843 +07:00 [DBG] Connection id "0HNP22RU7E693" started.
+2026-10-04 20:07:07.843 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-standalone-preset.js - null null
+2026-10-04 20:07:07.849 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-bundle.js - null null
+2026-10-04 20:07:07.888 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-10-04 20:07:07.891 +07:00 [DBG] Connection id "0HNP22RU7E691" completed keep alive response.
+2026-10-04 20:07:07.891 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui.css - 200 152034 text/css 50.1867ms
+2026-10-04 20:07:07.910 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-10-04 20:07:07.911 +07:00 [DBG] Connection id "0HNP22RU7E693" completed keep alive response.
+2026-10-04 20:07:07.911 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 67.49ms
+2026-10-04 20:07:07.938 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-10-04 20:07:07.939 +07:00 [DBG] Connection id "0HNP22RU7E692" completed keep alive response.
+2026-10-04 20:07:07.942 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 93.0503ms
+2026-10-04 20:07:08.892 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - null null
+2026-10-04 20:07:08.933 +07:00 [DBG] Connection id "0HNP22RU7E692" completed keep alive response.
+2026-10-04 20:07:08.933 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 40.519ms
+2026-10-04 20:07:08.956 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/favicon-32x32.png - null null
+2026-10-04 20:07:08.957 +07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-10-04 20:07:08.957 +07:00 [DBG] Connection id "0HNP22RU7E692" completed keep alive response.
+2026-10-04 20:07:08.957 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/favicon-32x32.png - 200 628 image/png 0.9001ms
+2026-10-04 20:09:18.823 +07:00 [DBG] Connection id "0HNP22RU7E691" disconnecting.
+2026-10-04 20:09:18.824 +07:00 [DBG] Connection id "0HNP22RU7E691" stopped.
+2026-10-04 20:09:18.824 +07:00 [DBG] Connection id "0HNP22RU7E691" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-10-04 20:09:19.838 +07:00 [DBG] Connection id "0HNP22RU7E692" disconnecting.
+2026-10-04 20:09:19.838 +07:00 [DBG] Connection id "0HNP22RU7E693" disconnecting.
+2026-10-04 20:09:19.838 +07:00 [DBG] Connection id "0HNP22RU7E692" stopped.
+2026-10-04 20:09:19.838 +07:00 [DBG] Connection id "0HNP22RU7E693" stopped.
+2026-10-04 20:09:19.839 +07:00 [DBG] Connection id "0HNP22RU7E692" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-10-04 20:09:19.839 +07:00 [DBG] Connection id "0HNP22RU7E693" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-10-04 20:41:46.426 +07:00 [DBG] Connection id "0HNP22RU7E694" accepted.
+2026-10-04 20:41:46.426 +07:00 [DBG] Connection id "0HNP22RU7E694" started.
+2026-10-04 20:41:46.426 +07:00 [DBG] Connection id "0HNP22RU7E695" accepted.
+2026-10-04 20:41:46.427 +07:00 [DBG] Connection id "0HNP22RU7E695" started.
+2026-10-04 20:41:46.444 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/index.html - null null
+2026-10-04 20:41:46.446 +07:00 [DBG] Connection id "0HNP22RU7E694" completed keep alive response.
+2026-10-04 20:41:46.446 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/index.html - 200 null text/html;charset=utf-8 2.003ms
+2026-10-04 20:41:46.924 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - null null
+2026-10-04 20:41:46.939 +07:00 [DBG] Connection id "0HNP22RU7E694" completed keep alive response.
+2026-10-04 20:41:46.939 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.965ms
+2026-10-04 20:42:46.606 +07:00 [DBG] Connection id "0HNP22RU7E695" received FIN.
+2026-10-04 20:42:46.606 +07:00 [DBG] Connection id "0HNP22RU7E695" disconnecting.
+2026-10-04 20:42:46.606 +07:00 [DBG] Connection id "0HNP22RU7E695" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-10-04 20:42:46.611 +07:00 [DBG] Connection id "0HNP22RU7E695" stopped.
+2026-10-04 20:43:41.656 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/api/HoaDon/hop-dong/tim-kiem?ti=1&ts=10 - null null
+2026-10-04 20:43:41.657 +07:00 [DBG] The request path  does not match the path filter
+2026-10-04 20:43:41.683 +07:00 [DBG] 2 candidate(s) found for the request path '/api/HoaDon/hop-dong/tim-kiem'
+2026-10-04 20:43:41.685 +07:00 [DBG] Endpoint 'API.Controllers.HoaDonController.TimKiemHopDong (API)' with route pattern 'api/HoaDon/hop-dong/tim-kiem' is valid for the request path '/api/HoaDon/hop-dong/tim-kiem'
+2026-10-04 20:43:41.685 +07:00 [DBG] Endpoint 'API.Controllers.HoaDonController.LayHopDongTheoId (API)' with route pattern 'api/HoaDon/hop-dong/{id}' is valid for the request path '/api/HoaDon/hop-dong/tim-kiem'
+2026-10-04 20:43:41.686 +07:00 [DBG] Request matched endpoint 'API.Controllers.HoaDonController.TimKiemHopDong (API)'
+2026-10-04 20:43:41.715 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-10-04 20:43:41.719 +07:00 [DBG] Policy authentication schemes  did not succeed
+2026-10-04 20:43:41.722 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-10-04 20:43:41.725 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-10-04 20:43:41.725 +07:00 [DBG] Connection id "0HNP22RU7E694" completed keep alive response.
+2026-10-04 20:43:41.725 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/api/HoaDon/hop-dong/tim-kiem?ti=1&ts=10 - 401 0 null 68.9938ms
+2026-10-04 20:45:11.017 +07:00 [DBG] Connection id "0HNP22RU7E696" accepted.
+2026-10-04 20:45:11.017 +07:00 [DBG] Connection id "0HNP22RU7E696" started.
+2026-10-04 20:45:11.017 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/api/HoaDon/hop-dong/tim-kiem?ti=1&ts=10 - null null
+2026-10-04 20:45:11.017 +07:00 [DBG] The request path  does not match the path filter
+2026-10-04 20:45:11.020 +07:00 [DBG] 2 candidate(s) found for the request path '/api/HoaDon/hop-dong/tim-kiem'
+2026-10-04 20:45:11.020 +07:00 [DBG] Endpoint 'API.Controllers.HoaDonController.TimKiemHopDong (API)' with route pattern 'api/HoaDon/hop-dong/tim-kiem' is valid for the request path '/api/HoaDon/hop-dong/tim-kiem'
+2026-10-04 20:45:11.020 +07:00 [DBG] Endpoint 'API.Controllers.HoaDonController.LayHopDongTheoId (API)' with route pattern 'api/HoaDon/hop-dong/{id}' is valid for the request path '/api/HoaDon/hop-dong/tim-kiem'
+2026-10-04 20:45:11.020 +07:00 [DBG] Request matched endpoint 'API.Controllers.HoaDonController.TimKiemHopDong (API)'
+2026-10-04 20:45:11.024 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-10-04 20:45:11.024 +07:00 [DBG] Policy authentication schemes  did not succeed
+2026-10-04 20:45:11.024 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-10-04 20:45:11.025 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-10-04 20:45:11.025 +07:00 [DBG] Connection id "0HNP22RU7E696" completed keep alive response.
+2026-10-04 20:45:11.025 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/api/HoaDon/hop-dong/tim-kiem?ti=1&ts=10 - 401 0 null 7.7689ms
+2026-10-04 20:45:53.496 +07:00 [DBG] Connection id "0HNP22RU7E694" disconnecting.
+2026-10-04 20:45:53.496 +07:00 [DBG] Connection id "0HNP22RU7E694" stopped.
+2026-10-04 20:45:53.496 +07:00 [DBG] Connection id "0HNP22RU7E694" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-10-04 20:46:51.103 +07:00 [DBG] Connection id "0HNP22RU7E697" accepted.
+2026-10-04 20:46:51.103 +07:00 [DBG] Connection id "0HNP22RU7E697" started.
+2026-10-04 20:46:51.104 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/api/Container/loai-container - null null
+2026-10-04 20:46:51.104 +07:00 [DBG] The request path  does not match the path filter
+2026-10-04 20:46:51.104 +07:00 [DBG] 2 candidate(s) found for the request path '/api/Container/loai-container'
+2026-10-04 20:46:51.104 +07:00 [DBG] Endpoint 'API.Controllers.ContainerController.LayDanhSachLoaiContainer (API)' with route pattern 'api/Container/loai-container' is valid for the request path '/api/Container/loai-container'
+2026-10-04 20:46:51.104 +07:00 [DBG] Endpoint 'API.Controllers.ContainerController.LayTheoId (API)' with route pattern 'api/Container/{id}' is valid for the request path '/api/Container/loai-container'
+2026-10-04 20:46:51.104 +07:00 [DBG] Request matched endpoint 'API.Controllers.ContainerController.LayDanhSachLoaiContainer (API)'
+2026-10-04 20:46:51.105 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-10-04 20:46:51.106 +07:00 [DBG] Policy authentication schemes  did not succeed
+2026-10-04 20:46:51.106 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-10-04 20:46:51.107 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-10-04 20:46:51.107 +07:00 [DBG] Connection id "0HNP22RU7E697" completed keep alive response.
+2026-10-04 20:46:51.107 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/api/Container/loai-container - 401 0 null 3.3023ms
+2026-10-04 20:47:22.082 +07:00 [DBG] Connection id "0HNP22RU7E696" disconnecting.
+2026-10-04 20:47:22.082 +07:00 [DBG] Connection id "0HNP22RU7E696" stopped.
+2026-10-04 20:47:22.082 +07:00 [DBG] Connection id "0HNP22RU7E696" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-10-04 20:47:28.440 +07:00 [DBG] Connection id "0HNP22RU7E698" accepted.
+2026-10-04 20:47:28.440 +07:00 [DBG] Connection id "0HNP22RU7E698" started.
+2026-10-04 20:47:28.441 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/api/Container/loai-container - null null
+2026-10-04 20:47:28.441 +07:00 [DBG] The request path  does not match the path filter
+2026-10-04 20:47:28.443 +07:00 [DBG] 2 candidate(s) found for the request path '/api/Container/loai-container'
+2026-10-04 20:47:28.443 +07:00 [DBG] Endpoint 'API.Controllers.ContainerController.LayDanhSachLoaiContainer (API)' with route pattern 'api/Container/loai-container' is valid for the request path '/api/Container/loai-container'
+2026-10-04 20:47:28.443 +07:00 [DBG] Endpoint 'API.Controllers.ContainerController.LayTheoId (API)' with route pattern 'api/Container/{id}' is valid for the request path '/api/Container/loai-container'
+2026-10-04 20:47:28.443 +07:00 [DBG] Request matched endpoint 'API.Controllers.ContainerController.LayDanhSachLoaiContainer (API)'
+2026-10-04 20:47:28.443 +07:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2026-10-04 20:47:28.443 +07:00 [DBG] Policy authentication schemes  did not succeed
+2026-10-04 20:47:28.443 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-10-04 20:47:28.443 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2026-10-04 20:47:28.443 +07:00 [DBG] Connection id "0HNP22RU7E698" completed keep alive response.
+2026-10-04 20:47:28.444 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/api/Container/loai-container - 401 0 null 3.0685ms
+2026-10-04 20:49:02.770 +07:00 [DBG] Connection id "0HNP22RU7E697" disconnecting.
+2026-10-04 20:49:02.770 +07:00 [DBG] Connection id "0HNP22RU7E697" stopped.
+2026-10-04 20:49:02.772 +07:00 [DBG] Connection id "0HNP22RU7E697" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-10-04 20:49:24.316 +07:00 [DBG] Connection id "0HNP22RU7E698" received FIN.
+2026-10-04 20:49:24.316 +07:00 [DBG] Connection id "0HNP22RU7E698" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-10-04 20:49:24.317 +07:00 [DBG] Connection id "0HNP22RU7E698" disconnecting.
+2026-10-04 20:49:24.317 +07:00 [DBG] Connection id "0HNP22RU7E698" stopped.
+2026-10-04 21:42:34.179 +07:00 [DBG] Connection id "0HNP22RU7E699" accepted.
+2026-10-04 21:42:34.179 +07:00 [DBG] Connection id "0HNP22RU7E69A" accepted.
+2026-10-04 21:42:34.180 +07:00 [DBG] Connection id "0HNP22RU7E699" started.
+2026-10-04 21:42:34.180 +07:00 [DBG] Connection id "0HNP22RU7E69A" started.
+2026-10-04 21:42:34.202 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/index.html - null null
+2026-10-04 21:42:34.204 +07:00 [DBG] Connection id "0HNP22RU7E699" completed keep alive response.
+2026-10-04 21:42:34.204 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/index.html - 200 null text/html;charset=utf-8 1.2922ms
+2026-10-04 21:42:34.631 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - null null
+2026-10-04 21:42:34.650 +07:00 [DBG] Connection id "0HNP22RU7E699" completed keep alive response.
+2026-10-04 21:42:34.650 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5286/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.7408ms
+2026-10-04 21:44:45.439 +07:00 [DBG] Connection id "0HNP22RU7E69A" disconnecting.
+2026-10-04 21:44:45.439 +07:00 [DBG] Connection id "0HNP22RU7E69A" stopped.
+2026-10-04 21:44:45.440 +07:00 [DBG] Connection id "0HNP22RU7E69A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2026-10-04 21:44:46.444 +07:00 [DBG] Connection id "0HNP22RU7E699" disconnecting.
+2026-10-04 21:44:46.444 +07:00 [DBG] Connection id "0HNP22RU7E699" stopped.
+2026-10-04 21:44:46.444 +07:00 [DBG] Connection id "0HNP22RU7E699" sending FIN because: "The Socket transport's send loop completed gracefully."

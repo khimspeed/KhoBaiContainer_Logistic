@@ -1,0 +1,2224 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "API Quản lý Kho Bãi Container",
+    "description": "Hệ thống quản lý Logistics Kho Bãi Container - KhoBaiContainerLogistic",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Container/loai-container": {
+      "get": {
+        "tags": [
+          "Container"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Container/loai-hang-hoa": {
+      "get": {
+        "tags": [
+          "Container"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Container/tim-kiem": {
+      "get": {
+        "tags": [
+          "Container"
+        ],
+        "parameters": [
+          {
+            "name": "trangIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "trangSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "soContainer",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "trangThai",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "maKho",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Container/{id}": {
+      "get": {
+        "tags": [
+          "Container"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Container/qua-han": {
+      "get": {
+        "tags": [
+          "Container"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Container/nhap-bai": {
+      "post": {
+        "tags": [
+          "Container"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NhapBaiRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NhapBaiRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NhapBaiRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Container/xuat-bai": {
+      "post": {
+        "tags": [
+          "Container"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/XuatBaiRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/XuatBaiRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/XuatBaiRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Container/chuyen-vi-tri": {
+      "post": {
+        "tags": [
+          "Container"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChuyenViTriRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChuyenViTriRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChuyenViTriRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Container/{containerId}/lich-su-di-chuyen": {
+      "get": {
+        "tags": [
+          "Container"
+        ],
+        "parameters": [
+          {
+            "name": "containerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "trangIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "trangSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 20
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoaDon/hop-dong/tim-kiem": {
+      "get": {
+        "tags": [
+          "HoaDon"
+        ],
+        "parameters": [
+          {
+            "name": "ti",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "ts",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "maKhachHang",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoaDon/hop-dong/{id}": {
+      "get": {
+        "tags": [
+          "HoaDon"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HoaDon"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoaDon/hop-dong/tao-moi": {
+      "post": {
+        "tags": [
+          "HoaDon"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoHopDongRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoHopDongRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoHopDongRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoaDon/tim-kiem": {
+      "get": {
+        "tags": [
+          "HoaDon"
+        ],
+        "parameters": [
+          {
+            "name": "ti",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "ts",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "maKhachHang",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "trangThai",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoaDon/{id}": {
+      "get": {
+        "tags": [
+          "HoaDon"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "HoaDon"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoaDon/tao-moi": {
+      "post": {
+        "tags": [
+          "HoaDon"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoHoaDonRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoHoaDonRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoHoaDonRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoaDon/tinh-phi-luu-bai": {
+      "get": {
+        "tags": [
+          "HoaDon"
+        ],
+        "parameters": [
+          {
+            "name": "maContainerDb",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "maHopDongDb",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoaDon/{invoiceId}/thanh-toan": {
+      "get": {
+        "tags": [
+          "HoaDon"
+        ],
+        "parameters": [
+          {
+            "name": "invoiceId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/HoaDon/ghi-nhan-thanh-toan": {
+      "post": {
+        "tags": [
+          "HoaDon"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GhiNhanThanhToanRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GhiNhanThanhToanRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GhiNhanThanhToanRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhachHang/tim-kiem": {
+      "get": {
+        "tags": [
+          "KhachHang"
+        ],
+        "parameters": [
+          {
+            "name": "trangIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "trangSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "ten",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhachHang/{id}": {
+      "get": {
+        "tags": [
+          "KhachHang"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "KhachHang"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhachHang/them-moi": {
+      "post": {
+        "tags": [
+          "KhachHang"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhachHangRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhachHangRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhachHangRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhachHang/cap-nhat": {
+      "put": {
+        "tags": [
+          "KhachHang"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapNhatKhachHangRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapNhatKhachHangRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapNhatKhachHangRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhoBai/tim-kiem": {
+      "get": {
+        "tags": [
+          "KhoBai"
+        ],
+        "parameters": [
+          {
+            "name": "trangIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "trangSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "ten",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhoBai/{id}": {
+      "get": {
+        "tags": [
+          "KhoBai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhoBai/them-kho": {
+      "post": {
+        "tags": [
+          "KhoBai"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhoBaiRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhoBaiRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhoBaiRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhoBai/cap-nhat-kho/{id}": {
+      "put": {
+        "tags": [
+          "KhoBai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhoBaiRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhoBaiRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhoBaiRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhoBai/xoa-kho/{id}": {
+      "delete": {
+        "tags": [
+          "KhoBai"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhoBai/{warehouseId}/khu-vuc": {
+      "get": {
+        "tags": [
+          "KhoBai"
+        ],
+        "parameters": [
+          {
+            "name": "warehouseId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhoBai/them-khu-vuc": {
+      "post": {
+        "tags": [
+          "KhoBai"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhuVucRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhuVucRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemKhuVucRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhoBai/khu-vuc/{zoneId}/vi-tri": {
+      "get": {
+        "tags": [
+          "KhoBai"
+        ],
+        "parameters": [
+          {
+            "name": "zoneId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhoBai/{warehouseId}/vi-tri-trong": {
+      "get": {
+        "tags": [
+          "KhoBai"
+        ],
+        "parameters": [
+          {
+            "name": "warehouseId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/KhoBai/them-vi-tri": {
+      "post": {
+        "tags": [
+          "KhoBai"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemViTriRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemViTriRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemViTriRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NguoiDung/tim-kiem": {
+      "get": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "parameters": [
+          {
+            "name": "trangIndex",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "trangSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "hoTen",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "taiKhoan",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NguoiDung/{id}": {
+      "get": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/NguoiDung/cap-nhat": {
+      "put": {
+        "tags": [
+          "NguoiDung"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapNhatNguoiDungRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapNhatNguoiDungRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapNhatNguoiDungRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ThongKe/dashboard": {
+      "get": {
+        "tags": [
+          "ThongKe"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ThongKe/iot/ghi-nhan": {
+      "post": {
+        "tags": [
+          "ThongKe"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GhiNhanIoTRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GhiNhanIoTRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GhiNhanIoTRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ThongKe/iot/{containerId}": {
+      "get": {
+        "tags": [
+          "ThongKe"
+        ],
+        "parameters": [
+          {
+            "name": "containerId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "gioiHan",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/phuong-tien": {
+      "get": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "parameters": [
+          {
+            "name": "ti",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "ts",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "bienSo",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/phuong-tien/them-moi": {
+      "post": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhuongTienModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhuongTienModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhuongTienModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/phuong-tien/cap-nhat": {
+      "put": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhuongTienModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhuongTienModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PhuongTienModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/tau-bien": {
+      "get": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "parameters": [
+          {
+            "name": "ti",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "ts",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/tau-bien/them-moi": {
+      "post": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TauBienModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TauBienModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TauBienModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/chuyen-hang/tim-kiem": {
+      "get": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "parameters": [
+          {
+            "name": "ti",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "ts",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 10
+            }
+          },
+          {
+            "name": "maVanDon",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          },
+          {
+            "name": "trangThai",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "default": ""
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/chuyen-hang/{id}": {
+      "get": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/chuyen-hang/tao-moi": {
+      "post": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoChuyenHangRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoChuyenHangRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoChuyenHangRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/chuyen-hang/{id}/trang-thai": {
+      "put": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "trangThai",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/chuyen-hang/{shipmentId}/cac-chang": {
+      "get": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "parameters": [
+          {
+            "name": "shipmentId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/VanChuyen/chang/them-moi": {
+      "post": {
+        "tags": [
+          "VanChuyen"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemChangRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemChangRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ThemChangRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/XacThuc/dang-nhap": {
+      "post": {
+        "tags": [
+          "XacThuc"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangNhapRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangNhapRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DangNhapRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/XacThuc/dang-ky": {
+      "post": {
+        "tags": [
+          "XacThuc"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoTaiKhoanRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoTaiKhoanRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TaoTaiKhoanRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CapNhatKhachHangRequestDto": {
+        "required": [
+          "maKhachHang",
+          "maKhachHangDb",
+          "tenKhachHang"
+        ],
+        "type": "object",
+        "properties": {
+          "maKhachHang": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tenKhachHang": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maSoThue": {
+            "type": "string",
+            "nullable": true
+          },
+          "soDienThoai": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "diaChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "maKhachHangDb": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CapNhatNguoiDungRequestDto": {
+        "required": [
+          "maNguoiDung"
+        ],
+        "type": "object",
+        "properties": {
+          "maNguoiDung": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "hoTen": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngaySinh": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "diaChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "gioiTinh": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "vaiTro": {
+            "type": "string",
+            "nullable": true
+          },
+          "hinhAnhUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChuyenViTriRequestDto": {
+        "required": [
+          "maContainerDb",
+          "maViTriMoiDb"
+        ],
+        "type": "object",
+        "properties": {
+          "maContainerDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maViTriMoiDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "ghiChu": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DangNhapRequestDto": {
+        "required": [
+          "matKhau",
+          "taiKhoan"
+        ],
+        "type": "object",
+        "properties": {
+          "taiKhoan": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "matKhau": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GhiNhanIoTRequestDto": {
+        "required": [
+          "maContainerDb"
+        ],
+        "type": "object",
+        "properties": {
+          "maContainerDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nhietDo": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "doAm": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GhiNhanThanhToanRequestDto": {
+        "required": [
+          "maHoaDonDb",
+          "soTien"
+        ],
+        "type": "object",
+        "properties": {
+          "maHoaDonDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "soTien": {
+            "type": "number",
+            "format": "double"
+          },
+          "phuongThuc": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghiChu": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NhapBaiRequestDto": {
+        "required": [
+          "maKhachHangDb",
+          "maKhoDb",
+          "maLoaiContainerDb",
+          "maViTriDb",
+          "soContainer"
+        ],
+        "type": "object",
+        "properties": {
+          "soContainer": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maLoaiContainerDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maLoaiHangDb": {
+            "type": "string",
+            "nullable": true
+          },
+          "maKhoDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maViTriDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maKhachHangDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "soNgayMienPhi": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ghiChu": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PhuongTienModel": {
+        "type": "object",
+        "properties": {
+          "vehicle_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "bien_so": {
+            "type": "string",
+            "nullable": true
+          },
+          "loai_phuong_tien": {
+            "type": "string",
+            "nullable": true
+          },
+          "ten_tai_xe": {
+            "type": "string",
+            "nullable": true
+          },
+          "so_dien_thoai": {
+            "type": "string",
+            "nullable": true
+          },
+          "trang_thai": {
+            "type": "string",
+            "nullable": true
+          },
+          "recordCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "rowNumber": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaoChuyenHangRequestDto": {
+        "required": [
+          "diemDen",
+          "diemDi",
+          "maKhachHangDb"
+        ],
+        "type": "object",
+        "properties": {
+          "diemDi": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "diemDen": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maKhachHangDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "duKienDen": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaoHoaDonRequestDto": {
+        "required": [
+          "maKhachHangDb",
+          "soTien"
+        ],
+        "type": "object",
+        "properties": {
+          "maKhachHangDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maHopDongDb": {
+            "type": "string",
+            "nullable": true
+          },
+          "soTien": {
+            "type": "number",
+            "format": "double"
+          },
+          "soNgayHanThanhToan": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaoHopDongRequestDto": {
+        "required": [
+          "donGiaLuuBai",
+          "maKhachHangDb",
+          "maKhoDb",
+          "ngayBatDau",
+          "ngayKetThuc",
+          "soHopDong"
+        ],
+        "type": "object",
+        "properties": {
+          "soHopDong": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maKhachHangDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maKhoDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "ngayBatDau": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ngayKetThuc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "donGiaLuuBai": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaoTaiKhoanRequestDto": {
+        "required": [
+          "hoTen",
+          "matKhau",
+          "taiKhoan"
+        ],
+        "type": "object",
+        "properties": {
+          "hoTen": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "ngaySinh": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "diaChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "gioiTinh": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "taiKhoan": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "matKhau": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "vaiTro": {
+            "type": "string",
+            "nullable": true
+          },
+          "hinhAnhUrl": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TauBienModel": {
+        "type": "object",
+        "properties": {
+          "vessel_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "vessel_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "vessel_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "imo_no": {
+            "type": "string",
+            "nullable": true
+          },
+          "recordCount": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "rowNumber": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ThemChangRequestDto": {
+        "required": [
+          "hinhThuc",
+          "maChuyenHang",
+          "thuTu"
+        ],
+        "type": "object",
+        "properties": {
+          "maChuyenHang": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maContainerDb": {
+            "type": "string",
+            "nullable": true
+          },
+          "maPhuongTien": {
+            "type": "string",
+            "nullable": true
+          },
+          "maTauDb": {
+            "type": "string",
+            "nullable": true
+          },
+          "thuTu": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hinhThuc": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ThemKhachHangRequestDto": {
+        "required": [
+          "maKhachHang",
+          "tenKhachHang"
+        ],
+        "type": "object",
+        "properties": {
+          "maKhachHang": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tenKhachHang": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maSoThue": {
+            "type": "string",
+            "nullable": true
+          },
+          "soDienThoai": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "diaChi": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ThemKhoBaiRequestDto": {
+        "required": [
+          "maKho",
+          "sucChuaTeu",
+          "tenKho"
+        ],
+        "type": "object",
+        "properties": {
+          "maKho": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tenKho": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "diaChi": {
+            "type": "string",
+            "nullable": true
+          },
+          "sucChuaTeu": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ThemKhuVucRequestDto": {
+        "required": [
+          "maKhoDb",
+          "maKhuVuc",
+          "tenKhuVuc"
+        ],
+        "type": "object",
+        "properties": {
+          "maKhoDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maKhuVuc": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tenKhuVuc": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ThemViTriRequestDto": {
+        "required": [
+          "maKhuVucDb",
+          "maViTri",
+          "teuToiDa"
+        ],
+        "type": "object",
+        "properties": {
+          "maKhuVucDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "maViTri": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "teuToiDa": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "XuatBaiRequestDto": {
+        "required": [
+          "maContainerDb"
+        ],
+        "type": "object",
+        "properties": {
+          "maContainerDb": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "ghiChu": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Nhập JWT Bearer token: Bearer {token}",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

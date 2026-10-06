@@ -1,0 +1,11 @@
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\obj\Debug\net8.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\obj\Debug\net8.0\Model.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\obj\Debug\net8.0\Model.AssemblyInfo.cs
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\obj\Debug\net8.0\Model.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\bin\Debug\net8.0\Model.deps.json
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\bin\Debug\net8.0\Model.dll
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\bin\Debug\net8.0\Model.pdb
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\obj\Debug\net8.0\Model.dll
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\obj\Debug\net8.0\refint\Model.dll
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\obj\Debug\net8.0\Model.pdb
+C:\Users\Admin\source\repos\Demo\ADO.NET\KhoBaiContainerLogistic\Model\obj\Debug\net8.0\ref\Model.dll
